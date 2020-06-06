@@ -7,7 +7,7 @@ class student:
     helps to print the passing parameter 
     """
     def __init__(self, name, age):# self shows class object
-        print('init called')
+        print('init called in student class')
         self.name = name
         self.age = age
 
@@ -16,11 +16,3 @@ class student:
         print("Name-", self.name)
         print("Age-", self.age)
 
-if __name__ == '__main__':
-    print(student.__doc__)#print the document string
-    
-    s1=student('sahil','23')#create object
-    
-    print("---------")
-    s1.printParameter()#call class function 
-    print(dir(student))
